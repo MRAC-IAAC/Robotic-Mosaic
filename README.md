@@ -45,8 +45,14 @@ Faculty – Alexandre Dubor, Angel Muñoz, Soroush Garivani
 
 The robotic application developed for this workshop is based on [Compas Fab](https://gramaziokohler.github.io/compas_fab/latest/). A **Robotic fabrication package for the COMPAS Framework** that facilitates the planning and execution of robotic fabrication processes. It provides interfaces to existing software libraries and tools available in the field of robotics (e.g. OMPL, ROS) and makes them accessible from within the parametric design environment. The package builds upon [COMPAS](https://compas.dev/), an open-source Python-based framework for collaboration and research in architecture, engineering and digital fabrication.
 
+![Workflow Extended](/images/diagram_extended.jpg)
+
+### Setup
+![Setup](/images/setup.jpg)
+
 In our application we use Rhino and Grasshopper as CAD software interfacing through a websocket with the robotic platform ROS, Universal Robots ROS driver to control the robot, Moveit as motion planner and a Realsense D435 RGBD camera as sensor to detect the pieces contours using the openCV library.
 
+![openCv](/images/opencv.jpg)
 
 The system is divided in 3 main parts, 2 computers and a Universal Robots UR10e. 
 
@@ -285,11 +291,16 @@ sudo apt install ros-melodic-rqt-joint-trajectory-controller
 1. **ROS side**
 In the Ubuntu 18.04 computer execute one the scripts you will find in the bash_scripts folder.
 
-    `#for just simulation`
-    `./ros_compas_fab.sh`
-or
-    `#to control a real robot`
-   ` ./ros_compas_fab_live.sh`
+    ```bash
+    #for just simulation
+    ./ros_compas_fab.sh
+    ```
+    or
+
+    ```bash
+    #to control a real robot
+    ./ros_compas_fab_live.sh
+    ```
 
 	Both files launch different ROS nodes:
 
@@ -341,6 +352,9 @@ Open the GH file from the cad folder. The Grasshopper definition contains differ
 
 
 ## Projects
+
+![Result](/images/result.jpg)
+
 Applications envisioned and developed by the students during the workshop.
 
 [LINK](http://www.iaacblog.com/programs/courses/mrac/2020-2021-mrac/w-2-1-workshop-mrac-2020-2021-2nd/)
@@ -350,10 +364,10 @@ Applications envisioned and developed by the students during the workshop.
 
  - https://www.ros.org
  - https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
-  - https://opencv.org/ https://www.intelrealsense.com/depth-camera-d435/
-   - https://compas.dev/index.html
-   - https://gramaziokohler.github.io/compas_fab/latest/
-   - https://github.com/compas-dev/compas_fab
+ - https://opencv.org/ https://www.intelrealsense.com/depth-camera-d435/
+ - https://compas.dev/index.html
+ - https://gramaziokohler.github.io/compas_fab/latest/
+ - https://github.com/compas-dev/compas_fab
 
 ## Acknowledges 
 
