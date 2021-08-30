@@ -41,14 +41,9 @@ Faculty – Alexandre Dubor, Angel Muñoz, Soroush Garivani
 
 ## WORKFLOW
 
-![Workflow](/images/diagram.jpg)
-
-The robotic application developed for this workshop is based on [Compas Fab](https://gramaziokohler.github.io/compas_fab/latest/). A **Robotic fabrication package for the COMPAS Framework** that facilitates the planning and execution of robotic fabrication processes. It provides interfaces to existing software libraries and tools available in the field of robotics (e.g. OMPL, ROS) and makes them accessible from within the parametric design environment. The package builds upon [COMPAS](https://compas.dev/), an open-source Python-based framework for collaboration and research in architecture, engineering and digital fabrication.
-
 ![Workflow Extended](/images/diagram_extended.jpg)
 
-### Setup
-![Setup](/images/setup.jpg)
+The robotic application developed for this workshop is based on [Compas Fab](https://gramaziokohler.github.io/compas_fab/latest/). A **Robotic fabrication package for the COMPAS Framework** that facilitates the planning and execution of robotic fabrication processes. It provides interfaces to existing software libraries and tools available in the field of robotics (e.g. OMPL, ROS) and makes them accessible from within the parametric design environment. The package builds upon [COMPAS](https://compas.dev/), an open-source Python-based framework for collaboration and research in architecture, engineering and digital fabrication.
 
 In our application we use Rhino and Grasshopper as CAD software interfacing through a websocket with the robotic platform ROS, Universal Robots ROS driver to control the robot, Moveit as motion planner and a Realsense D435 RGBD camera as sensor to detect the pieces contours using the openCV library.
 
@@ -56,6 +51,8 @@ In our application we use Rhino and Grasshopper as CAD software interfacing thro
 
 The system is divided in 3 main parts, 2 computers and a Universal Robots UR10e. 
 
+### Setup
+![Setup](/images/setup.jpg)
 
 
 ## WINDOWS COMPUTER
